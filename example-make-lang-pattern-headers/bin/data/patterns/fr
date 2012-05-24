@@ -1,8 +1,3 @@
-#pragma once
-
-#define stringify(text) # text
-
-string patternFR = stringify(
 2 2
 2'2
 .a4
@@ -1150,4 +1145,3 @@ privatdo3zent.
 1zo
 1zu
 1zy
-);

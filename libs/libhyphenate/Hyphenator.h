@@ -58,9 +58,12 @@ namespace Hyphenate {
          /** Build a hyphenator from the patterns in the file provided. */
 	 Hyphenator(const char *filename); 
 
-         /** Destructor. */
+       // a constructor for loading a dict directly from a string, rather than a file
+       Hyphenator(const std::string& dictstring);
+       
+       /** Destructor. */
 	 ~Hyphenator();
-
+       
          /** The actual workhorse. You'll want to call this function once
          * for each word (NEW: or complete string, not only word. The library
          * will do the word-splitting for you) you want hyphenated.  

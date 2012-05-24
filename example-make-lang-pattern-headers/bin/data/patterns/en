@@ -1,8 +1,3 @@
-#pragma once
-
-#define stringify(text) # text
-
-string patternEN = stringify(
 2 2
 .a2ch4
 .ad4der
@@ -5540,4 +5535,3 @@ z4zy
 .ta9b8le.
 .2tab
 .tab2l2
-);

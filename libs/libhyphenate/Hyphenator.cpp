@@ -84,7 +84,19 @@ Hyphenate::Hyphenator::Hyphenator(const char *filename) {
    dictionary = read_hyphenation_table(filename);
 }
 
+Hyphenate::Hyphenator::Hyphenator(const std::string& dict) {
+    std::stringstream ss;
+    ss << dict;
+    auto_ptr<HyphenationTree> output(new HyphenationTree());
+    output->loadPatterns(ss);
+    dictionary = output;
+}
+
+
 Hyphenator::~Hyphenator() {}
+
+
+
 
 std::string Hyphenator::hyphenate
          (const std::string &word, const std::string &hyphen)

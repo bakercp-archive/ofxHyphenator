@@ -1,8 +1,3 @@
-#pragma once
-
-#define stringify(text) # text
-
-string patternDE1901 = stringify(
 2 2
 .aa6l .ab3a4s .ab3ei .abi2 .ab3it .ab1l .ab1r .ab3u .ad3o4r .alti6
 .ana3c .an5alg .an1e .ang8s .an1s .ap1p .ar6sc .ar6ta .ar6tei .as2z
@@ -598,4 +593,4 @@ zu1b4 zu1f2 6z5uhr zun2a 8zunem zunf8 8zungl zu1o zup8fi zu1s8 zu1z
 ß1te  ßt3hei  ß1ti  ß5to 
 ß1tr  1ßu8  6ß5um  ß1v  ß1w
  ß1z 
-);
+schif1fahrt/ff=,4,1

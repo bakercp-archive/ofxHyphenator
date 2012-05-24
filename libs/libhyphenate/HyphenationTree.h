@@ -21,7 +21,8 @@
 #ifndef HYPHENATION_TREE_H
 #define HYPHENATION_TREE_H
 
-#include "ofMain.h"
+#include "ofUnicode.h"
+#include "ofUTF8.h"
 #include <string>
 #include <vector>
 #include <map>

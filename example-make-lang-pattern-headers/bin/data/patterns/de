@@ -1,8 +1,3 @@
-#pragma once
-
-#define stringify(text) # text
-
-string patternDE = stringify(
 2 2
 .aa6l
 .ab3a4s
@@ -5805,4 +5800,3 @@ s2s3z
 1ckie
 1ckig
 1ckun
-);
