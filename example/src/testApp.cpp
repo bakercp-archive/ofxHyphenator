@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 
-    
+    /*
     ofFile file("patterns/de-DE-1901");
     ofBuffer buff = file.readToBuffer();
     
@@ -25,8 +25,8 @@ void testApp::setup(){
     cout << s << endl;
      
     assert(buff.getText() == s);
-    
-     /*
+    */
+     
     Hyphenate::Hyphenator hyph(ofFilePath::getAbsolutePath("patterns/en").c_str());
     
     string s = "The quick brown fox jumped over the lazy dog.";
@@ -53,7 +53,7 @@ void testApp::setup(){
     cout << "From: " << s << endl;
     cout << "  To: " << shyph << endl;
     cout << "---" << endl;
-    */
+    
     
 }
 

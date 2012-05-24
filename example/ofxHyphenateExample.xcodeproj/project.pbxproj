@@ -124,7 +124,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				FDF792E215601A880061FF27 /* ofxHyphenate */,
+				FDF792E215601A880061FF27 /* ofxHyphenator */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -223,13 +223,13 @@
 			path = ../libs/libhyphenate;
 			sourceTree = "<group>";
 		};
-		FDF792E215601A880061FF27 /* ofxHyphenate */ = {
+		FDF792E215601A880061FF27 /* ofxHyphenator */ = {
 			isa = PBXGroup;
 			children = (
 				FDF792E415601A960061FF27 /* lib */,
 				FDF792E315601A910061FF27 /* src */,
 			);
-			name = ofxHyphenate;
+			name = ofxHyphenator;
 			sourceTree = "<group>";
 		};
 		FDF792E315601A910061FF27 /* src */ = {
