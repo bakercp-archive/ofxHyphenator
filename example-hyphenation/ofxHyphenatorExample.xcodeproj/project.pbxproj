@@ -97,16 +97,14 @@
 		FD1F55B815624200005A5F26 /* Hyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hyphenator.h; sourceTree = "<group>"; };
 		FD1F55B915624200005A5F26 /* Language.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Language.cpp; sourceTree = "<group>"; };
 		FD1F55BA15624200005A5F26 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
-		FD7BF94E156ED70A0016022F /* ReleaseNotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes; sourceTree = "<group>"; };
-		FD7BF94F156ED70A0016022F /* utf8cpp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = utf8cpp.html; sourceTree = "<group>"; };
-		FD7BF952156ED70A0016022F /* checked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checked.h; sourceTree = "<group>"; };
-		FD7BF953156ED70A0016022F /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
-		FD7BF954156ED70A0016022F /* unchecked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unchecked.h; sourceTree = "<group>"; };
-		FD7BF955156ED70A0016022F /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
 		FD7BF958156ED70A0016022F /* ofUnicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofUnicode.cpp; sourceTree = "<group>"; };
 		FD7BF959156ED70A0016022F /* ofUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofUnicode.h; sourceTree = "<group>"; };
 		FD7BF95A156ED70A0016022F /* ofUTF8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofUTF8.cpp; sourceTree = "<group>"; };
 		FD7BF95B156ED70A0016022F /* ofUTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofUTF8.h; sourceTree = "<group>"; };
+		FDB075551572805000FD605E /* checked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checked.h; sourceTree = "<group>"; };
+		FDB075561572805000FD605E /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		FDB075571572805000FD605E /* unchecked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unchecked.h; sourceTree = "<group>"; };
+		FDB075581572805000FD605E /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
 		FDE3579F156EF2540084B43C /* ofHyphenator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHyphenator.cpp; path = ../src/ofHyphenator.cpp; sourceTree = "<group>"; };
 		FDF792F415601AD30061FF27 /* ofHyphenator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofHyphenator.h; path = ../src/ofHyphenator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,56 +240,11 @@
 		FD7BF93A156ED70A0016022F /* ofxUnicode */ = {
 			isa = PBXGroup;
 			children = (
-				FD7BF94B156ED70A0016022F /* lib */,
+				FDB075451572805000FD605E /* libs */,
 				FD7BF957156ED70A0016022F /* src */,
 			);
 			name = ofxUnicode;
 			path = ../../ofxUnicode;
-			sourceTree = "<group>";
-		};
-		FD7BF94B156ED70A0016022F /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF94C156ED70A0016022F /* utf8cpp */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		FD7BF94C156ED70A0016022F /* utf8cpp */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF94D156ED70A0016022F /* doc */,
-				FD7BF950156ED70A0016022F /* include */,
-			);
-			path = utf8cpp;
-			sourceTree = "<group>";
-		};
-		FD7BF94D156ED70A0016022F /* doc */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF94E156ED70A0016022F /* ReleaseNotes */,
-				FD7BF94F156ED70A0016022F /* utf8cpp.html */,
-			);
-			path = doc;
-			sourceTree = "<group>";
-		};
-		FD7BF950156ED70A0016022F /* include */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF951156ED70A0016022F /* utf8 */,
-				FD7BF955156ED70A0016022F /* utf8.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		FD7BF951156ED70A0016022F /* utf8 */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF952156ED70A0016022F /* checked.h */,
-				FD7BF953156ED70A0016022F /* core.h */,
-				FD7BF954156ED70A0016022F /* unchecked.h */,
-			);
-			path = utf8;
 			sourceTree = "<group>";
 		};
 		FD7BF957156ED70A0016022F /* src */ = {
@@ -303,6 +256,41 @@
 				FD7BF95B156ED70A0016022F /* ofUTF8.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		FDB075451572805000FD605E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075521572805000FD605E /* utf8cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		FDB075521572805000FD605E /* utf8cpp */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075531572805000FD605E /* include */,
+			);
+			path = utf8cpp;
+			sourceTree = "<group>";
+		};
+		FDB075531572805000FD605E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075541572805000FD605E /* utf8 */,
+				FDB075581572805000FD605E /* utf8.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FDB075541572805000FD605E /* utf8 */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075551572805000FD605E /* checked.h */,
+				FDB075561572805000FD605E /* core.h */,
+				FDB075571572805000FD605E /* unchecked.h */,
+			);
+			path = utf8;
 			sourceTree = "<group>";
 		};
 		FDF792E215601A880061FF27 /* ofxHyphenator */ = {
@@ -576,7 +564,9 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../ofxUnicode/libs/icu/lib/osx\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -662,7 +652,9 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../ofxUnicode/libs/icu/lib/osx\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

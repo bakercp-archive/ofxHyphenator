@@ -31,6 +31,14 @@
 		FD1F55BF15624200005A5F26 /* Language.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F55B915624200005A5F26 /* Language.cpp */; };
 		FD7BF963156ED70A0016022F /* ofUnicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD7BF958156ED70A0016022F /* ofUnicode.cpp */; };
 		FD7BF964156ED70A0016022F /* ofUTF8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD7BF95A156ED70A0016022F /* ofUTF8.cpp */; };
+		FDB075371572800300FD605E /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB0751D1572800300FD605E /* libicudata.a */; };
+		FDB075381572800300FD605E /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB0751E1572800300FD605E /* libicui18n.a */; };
+		FDB075391572800300FD605E /* libicuio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB0751F1572800300FD605E /* libicuio.a */; };
+		FDB0753A1572800300FD605E /* libicule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB075201572800300FD605E /* libicule.a */; };
+		FDB0753B1572800300FD605E /* libiculx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB075211572800300FD605E /* libiculx.a */; };
+		FDB0753C1572800300FD605E /* libicutest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB075221572800300FD605E /* libicutest.a */; };
+		FDB0753D1572800300FD605E /* libicutu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB075231572800300FD605E /* libicutu.a */; };
+		FDB0753E1572800300FD605E /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB075241572800300FD605E /* libicuuc.a */; };
 		FDE357AA156EFBBD0084B43C /* ofHyphenator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDE357A7156EFBBD0084B43C /* ofHyphenator.cpp */; };
 /* End PBXBuildFile section */
 
@@ -96,16 +104,22 @@
 		FD1F55B815624200005A5F26 /* Hyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hyphenator.h; sourceTree = "<group>"; };
 		FD1F55B915624200005A5F26 /* Language.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Language.cpp; sourceTree = "<group>"; };
 		FD1F55BA15624200005A5F26 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
-		FD7BF94E156ED70A0016022F /* ReleaseNotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes; sourceTree = "<group>"; };
-		FD7BF94F156ED70A0016022F /* utf8cpp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = utf8cpp.html; sourceTree = "<group>"; };
-		FD7BF952156ED70A0016022F /* checked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checked.h; sourceTree = "<group>"; };
-		FD7BF953156ED70A0016022F /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
-		FD7BF954156ED70A0016022F /* unchecked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unchecked.h; sourceTree = "<group>"; };
-		FD7BF955156ED70A0016022F /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
 		FD7BF958156ED70A0016022F /* ofUnicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofUnicode.cpp; sourceTree = "<group>"; };
 		FD7BF959156ED70A0016022F /* ofUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofUnicode.h; sourceTree = "<group>"; };
 		FD7BF95A156ED70A0016022F /* ofUTF8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofUTF8.cpp; sourceTree = "<group>"; };
 		FD7BF95B156ED70A0016022F /* ofUTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofUTF8.h; sourceTree = "<group>"; };
+		FDB0751D1572800300FD605E /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicudata.a; sourceTree = "<group>"; };
+		FDB0751E1572800300FD605E /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicui18n.a; sourceTree = "<group>"; };
+		FDB0751F1572800300FD605E /* libicuio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicuio.a; sourceTree = "<group>"; };
+		FDB075201572800300FD605E /* libicule.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicule.a; sourceTree = "<group>"; };
+		FDB075211572800300FD605E /* libiculx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiculx.a; sourceTree = "<group>"; };
+		FDB075221572800300FD605E /* libicutest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicutest.a; sourceTree = "<group>"; };
+		FDB075231572800300FD605E /* libicutu.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicutu.a; sourceTree = "<group>"; };
+		FDB075241572800300FD605E /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicuuc.a; sourceTree = "<group>"; };
+		FDB075281572800300FD605E /* checked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checked.h; sourceTree = "<group>"; };
+		FDB075291572800300FD605E /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		FDB0752A1572800300FD605E /* unchecked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unchecked.h; sourceTree = "<group>"; };
+		FDB0752B1572800300FD605E /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
 		FDE357A7156EFBBD0084B43C /* ofHyphenator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHyphenator.cpp; path = ../src/ofHyphenator.cpp; sourceTree = "<group>"; };
 		FDE357A8156EFBBD0084B43C /* ofHyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHyphenator.h; path = ../src/ofHyphenator.h; sourceTree = "<group>"; };
 		FDE357A9156EFBBD0084B43C /* ofHyphenatorPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHyphenatorPatterns.h; path = ../src/ofHyphenatorPatterns.h; sourceTree = "<group>"; };
@@ -130,6 +144,14 @@
 				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
+				FDB075371572800300FD605E /* libicudata.a in Frameworks */,
+				FDB075381572800300FD605E /* libicui18n.a in Frameworks */,
+				FDB075391572800300FD605E /* libicuio.a in Frameworks */,
+				FDB0753A1572800300FD605E /* libicule.a in Frameworks */,
+				FDB0753B1572800300FD605E /* libiculx.a in Frameworks */,
+				FDB0753C1572800300FD605E /* libicutest.a in Frameworks */,
+				FDB0753D1572800300FD605E /* libicutu.a in Frameworks */,
+				FDB0753E1572800300FD605E /* libicuuc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,56 +264,11 @@
 		FD7BF93A156ED70A0016022F /* ofxUnicode */ = {
 			isa = PBXGroup;
 			children = (
-				FD7BF94B156ED70A0016022F /* lib */,
+				FDB075181572800300FD605E /* libs */,
 				FD7BF957156ED70A0016022F /* src */,
 			);
 			name = ofxUnicode;
 			path = ../../ofxUnicode;
-			sourceTree = "<group>";
-		};
-		FD7BF94B156ED70A0016022F /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF94C156ED70A0016022F /* utf8cpp */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		FD7BF94C156ED70A0016022F /* utf8cpp */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF94D156ED70A0016022F /* doc */,
-				FD7BF950156ED70A0016022F /* include */,
-			);
-			path = utf8cpp;
-			sourceTree = "<group>";
-		};
-		FD7BF94D156ED70A0016022F /* doc */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF94E156ED70A0016022F /* ReleaseNotes */,
-				FD7BF94F156ED70A0016022F /* utf8cpp.html */,
-			);
-			path = doc;
-			sourceTree = "<group>";
-		};
-		FD7BF950156ED70A0016022F /* include */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF951156ED70A0016022F /* utf8 */,
-				FD7BF955156ED70A0016022F /* utf8.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		FD7BF951156ED70A0016022F /* utf8 */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BF952156ED70A0016022F /* checked.h */,
-				FD7BF953156ED70A0016022F /* core.h */,
-				FD7BF954156ED70A0016022F /* unchecked.h */,
-			);
-			path = utf8;
 			sourceTree = "<group>";
 		};
 		FD7BF957156ED70A0016022F /* src */ = {
@@ -303,6 +280,81 @@
 				FD7BF95B156ED70A0016022F /* ofUTF8.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		FDB075181572800300FD605E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075191572800300FD605E /* icu */,
+				FDB075251572800300FD605E /* utf8cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		FDB075191572800300FD605E /* icu */ = {
+			isa = PBXGroup;
+			children = (
+				FDB0751A1572800300FD605E /* lib */,
+			);
+			path = icu;
+			sourceTree = "<group>";
+		};
+		FDB0751A1572800300FD605E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				FDB0751B1572800300FD605E /* ios */,
+				FDB0751C1572800300FD605E /* osx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		FDB0751B1572800300FD605E /* ios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		FDB0751C1572800300FD605E /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				FDB0751D1572800300FD605E /* libicudata.a */,
+				FDB0751E1572800300FD605E /* libicui18n.a */,
+				FDB0751F1572800300FD605E /* libicuio.a */,
+				FDB075201572800300FD605E /* libicule.a */,
+				FDB075211572800300FD605E /* libiculx.a */,
+				FDB075221572800300FD605E /* libicutest.a */,
+				FDB075231572800300FD605E /* libicutu.a */,
+				FDB075241572800300FD605E /* libicuuc.a */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		FDB075251572800300FD605E /* utf8cpp */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075261572800300FD605E /* include */,
+			);
+			path = utf8cpp;
+			sourceTree = "<group>";
+		};
+		FDB075261572800300FD605E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075271572800300FD605E /* utf8 */,
+				FDB0752B1572800300FD605E /* utf8.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FDB075271572800300FD605E /* utf8 */ = {
+			isa = PBXGroup;
+			children = (
+				FDB075281572800300FD605E /* checked.h */,
+				FDB075291572800300FD605E /* core.h */,
+				FDB0752A1572800300FD605E /* unchecked.h */,
+			);
+			path = utf8;
 			sourceTree = "<group>";
 		};
 		FDF792E215601A880061FF27 /* ofxHyphenator */ = {
@@ -576,7 +628,9 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../ofxUnicode/libs/icu/lib/osx\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -662,7 +716,9 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../ofxUnicode/libs/icu/lib/osx\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

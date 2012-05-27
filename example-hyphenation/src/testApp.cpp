@@ -6,6 +6,9 @@ void testApp::setup(){
     // dictionaries can be loaded from file, or by language using the default
     // dictionaries encoded in ofHyphenatorPatterns.h.
 
+    // all output from this program can be found on the console. 
+    // there is currently no visual output.
+    
     {
         // english dictionary loaded by default from header file
         string s = "Word Hyphenation by Computer.";
