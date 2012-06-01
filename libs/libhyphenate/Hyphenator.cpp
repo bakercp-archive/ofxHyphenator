@@ -118,7 +118,7 @@ std::string Hyphenator::hyphenate
        
        
       else {
-         bool isalpha = ofUnicode::isAlpha(ofUTF8::get(word.c_str()+i));
+         bool isalpha = ofUnicode::isAlpha(ofUTF8::getUnsafe(word,word.c_str()+i));
 
          if (word_start == string::npos && isalpha)
             word_start = i;
@@ -178,25 +178,25 @@ pair<std::string,std::string> Hyphenator::hyphenate_at
    /* First of all, find the word which needs to be hyphenated. */
    const ofChar *cur = src.c_str();
    for (uint i = 0; i < len; i++)
-      cur = ofUTF8::next(cur);
+      cur = ofUTF8::nextUnsafe(src,cur);
     
    const ofChar *next = cur;
-   if (!ofUnicode::isSpace(ofUTF8::get(next)))
-      next = ofUTF8::next(next);
+   if (!ofUnicode::isSpace(ofUTF8::getUnsafe(src,next)))
+      next = ofUTF8::nextUnsafe(src,next);
    pair<string,string> result;
 
-    if ( ofUnicode::isSpace(ofUTF8::get(next)) ) {
+    if ( ofUnicode::isSpace(ofUTF8::getUnsafe(src,next)) ) {
       /* We are lucky: There is a space we can hyphenate at. */
       
       /* We leave no spaces at the end of a line: */
-      while ( ofUnicode::isSpace(ofUTF8::get(cur)) )
-         cur = ofUTF8::prior(cur);
+      while ( ofUnicode::isSpace(ofUTF8::getUnsafe(src,cur)) )
+         cur = ofUTF8::priorUnsafe(src,cur);
       int len = cur - src.c_str() + 1;
       result.first = src.substr(0, len);
 
       /* Neither do we leave spaces at the beginning of the next. */
-      while ( ofUnicode::isSpace(ofUTF8::get(next)) )
-         next = ofUTF8::next(next);
+      while ( ofUnicode::isSpace(ofUTF8::getUnsafe(src,next)) )
+         next = ofUTF8::nextUnsafe(src,next);
       result.second = src.substr( next - src.c_str() );
 
    } else {
@@ -206,15 +206,15 @@ pair<std::string,std::string> Hyphenator::hyphenate_at
       while (true) {
          /* Find the start of a word first. */
           
-         bool in_word = ofUnicode::isAlpha(ofUTF8::get(cur));
+         bool in_word = ofUnicode::isAlpha(ofUTF8::getUnsafe(src,cur));
          const ofChar *word_start = NULL;
          while ( cur > src.c_str() ) {
-            cur = ofUTF8::prior(cur);
-            ofUniChar ch = ofUTF8::get(cur);
+            cur = ofUTF8::priorUnsafe(src,cur);
+            ofUniChar ch = ofUTF8::getUnsafe(src,cur);
 
             if (in_word && (!ofUnicode::isAlpha(ch))) {
                /* If we have a word, try hyphenating it.*/
-               word_start = ofUTF8::next(cur);
+               word_start = ofUTF8::nextUnsafe(src,cur);
                break;
             } else if (ofUnicode::isSpace(ch)) {
                break;
@@ -234,8 +234,8 @@ pair<std::string,std::string> Hyphenator::hyphenate_at
             /* We have the start of a word, now look for the character after
             * the end. */
             const ofChar *word_end = word_start;
-            while ( ofUnicode::isAlpha(ofUTF8::get(word_end)) )
-               word_end = ofUTF8::next(word_end);
+            while ( ofUnicode::isAlpha(ofUTF8::getUnsafe(src,word_end)) )
+               word_end = ofUTF8::nextUnsafe(src,word_end);
 
             /* Build the substring consisting of the word. */
             string word;
@@ -266,8 +266,8 @@ pair<std::string,std::string> Hyphenator::hyphenate_at
                }
 
             bool have_space = false;
-            for (const ofChar *i = src.c_str(); i <= word_start; i = ofUTF8::next(i))
-               if (ofUnicode::isSpace(ofUTF8::get(i))) {
+            for (const ofChar *i = src.c_str(); i <= word_start; i = ofUTF8::nextUnsafe(src,i))
+               if (ofUnicode::isSpace(ofUTF8::getUnsafe(src,i))) {
                   have_space = true;
                   break;
                }
@@ -290,22 +290,22 @@ pair<std::string,std::string> Hyphenator::hyphenate_at
             /* We cannot hyphenate at all, so leave the first block standing
              * and move to its end. */
             const ofChar *eol = cur;
-            while (*eol != 0 && !ofUnicode::isSpace(ofUTF8::get(eol)))
-               eol = ofUTF8::next(eol);
+            while (*eol != 0 && !ofUnicode::isSpace(ofUTF8::getUnsafe(src,eol)))
+               eol = ofUTF8::nextUnsafe(src,eol);
 
             result.first = src.substr(0, eol-src.c_str()+1);
-            while (*eol != 0 && ofUnicode::isSpace(ofUTF8::get(eol)))
-               eol = ofUTF8::next(eol);
+            while (*eol != 0 && ofUnicode::isSpace(ofUTF8::getUnsafe(src,eol)))
+               eol = ofUTF8::nextUnsafe(src,eol);
             result.second = string(eol);
             break;
-         } else if (ofUnicode::isSpace(ofUTF8::get(cur))) {
+         } else if (ofUnicode::isSpace(ofUTF8::getUnsafe(src,cur))) {
             /* eol is the end of the previous line, bol the start of the
                * next. */
             const ofChar *eol = cur, *bol = cur;
-            while(ofUnicode::isSpace(ofUTF8::get(eol)))
-               eol = ofUTF8::prior(eol);
-            while(ofUnicode::isSpace(ofUTF8::get(bol)))
-               bol = ofUTF8::next(bol);
+            while(ofUnicode::isSpace(ofUTF8::getUnsafe(src,eol)))
+               eol = ofUTF8::priorUnsafe(src,eol);
+            while(ofUnicode::isSpace(ofUTF8::getUnsafe(src,bol)))
+               bol = ofUTF8::nextUnsafe(src,bol);
             
             result.first  = src.substr(0, eol - src.c_str() + 1);
             result.second = string(bol);
